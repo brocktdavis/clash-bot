@@ -1,0 +1,37 @@
+{
+  "name": "clash-bot",
+  "version": "1.0.0",
+  "description": "Clash of Clans Discord Bot",
+  "main": "index.js",
+  "scripts": {
+    "transpile": "babel src -d dst",
+    "clean": "rimraf dst",
+    "exec": "node ./dst/index.js",
+    "build": "npm run clean && npm run transpile",
+    "start": "npm run build && npm run exec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brocktdavis/clash-bot.git"
+  },
+  "author": "Brock T Davis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brocktdavis/clash-bot/issues"
+  },
+  "homepage": "https://github.com/brocktdavis/clash-bot#readme",
+  "dependencies": {
+    "discord.js": "^14.7.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.7",
+    "@babel/cli": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "rimraf": "^3.0.2"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
+}
