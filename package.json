@@ -21,11 +21,12 @@
   },
   "homepage": "https://github.com/brocktdavis/clash-bot#readme",
   "dependencies": {
-    "discord.js": "^14.7.1"
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.7",
     "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.7",
     "@babel/preset-env": "^7.20.2",
     "rimraf": "^3.0.2"
   },

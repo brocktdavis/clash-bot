@@ -1,2 +1,6 @@
-.env*
+# Environment variables
+.env
+
+# Node
 node_modules/
+dst/
