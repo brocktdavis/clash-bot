@@ -6,10 +6,10 @@
   "scripts": {
     "transpile": "babel src -d dst",
     "clean": "rimraf dst",
-    "exec": "node ./dst/index.js",
+    "exec": "node -r dotenv/config ./dst/index.js",
     "build": "npm run clean && npm run transpile",
     "start": "npm run build && npm run exec",
-    "deploy-commands": "npm run build && node ./dst/deploy-commands.js"
+    "deploy-commands": "npm run build && node -r dotenv/config ./dst/deploy-commands.js"
   },
   "repository": {
     "type": "git",

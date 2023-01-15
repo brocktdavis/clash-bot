@@ -1,9 +1,6 @@
-// dotenv config
-import {config} from 'dotenv';
-config();
-// Rest of imports
 import {Client, GatewayIntentBits, Events, } from 'discord.js';
 import Commands from './commands';
+import {ClashClient} from './clash';
 
 // Init client
 const client = new Client({
