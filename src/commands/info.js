@@ -5,8 +5,7 @@ const data = new SlashCommandBuilder()
   .setDescription('Replies with information about me.')
 
 const execute = async (interaction) => {
-  console.log('Command Info: ', interaction);
-  await interaction.reply('Name: ', process.env.NAME);
+  await interaction.reply('Hello! I am ' + interaction.client.user.username);
 }
 
 export {data, execute};
